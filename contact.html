@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | LatticeWire</title>
+  <meta name="description" content="Contact LatticeWire for cybersecurity consulting, product partnerships, or channel partner inquiries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <a href="#main" class="u-visually-hidden">Skip to content</a>
+
+  <header class="c-header">
+    <div class="l-container c-header__bar">
+      <a href="index.html" class="c-logo">
+        <svg class="c-logo__mark" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M2 6L10 2L18 6V14L10 18L2 14V6Z" stroke="#B8703F" stroke-width="1.2" />
+          <path d="M2 6L10 10L18 6M10 10V18M10 10L2 14M10 10L18 14" stroke="#B8703F" stroke-width="1" />
+        </svg>
+        LatticeWire
+      </a>
+      <button class="c-nav__toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="c-nav" aria-label="Primary">
+        <ul class="c-nav__list">
+          <li><a href="services.html" class="c-nav__link">Services</a></li>
+          <li><a href="booking.html" class="c-nav__link">Booking</a></li>
+          <li><a href="resources.html" class="c-nav__link">Resources</a></li>
+          <li><a href="about.html" class="c-nav__link">About</a></li>
+          <li><a href="contact.html" class="c-nav__link" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="c-header__actions">
+        <a href="booking.html" class="c-button c-button--primary">Book a Call</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="c-hero c-hero--compact c-lattice">
+      <div class="l-container c-hero__inner">
+        <span class="u-eyebrow">Contact</span>
+        <h1 class="c-hero__title u-h1" style="font-size: var(--fs-h1);">Let's start the conversation.</h1>
+        <p class="c-hero__lede u-lede">Whether you're seeking security guidance or exploring a channel partnership, our team responds within one business day.</p>
+      </div>
+    </section>
+
+    <section class="l-section">
+      <div class="l-container c-contact-grid">
+
+        <div>
+          <span class="u-eyebrow">Send a Message</span>
+          <form id="contact-form" class="u-mt-3" novalidate>
+
+            <div class="c-form__row c-form__row--2col">
+              <div class="c-field">
+                <label class="c-field__label" for="full-name">Full name</label>
+                <input class="c-field__input" type="text" id="full-name" name="fullName" autocomplete="name" required />
+              </div>
+              <div class="c-field">
+                <label class="c-field__label" for="company-name">Company name</label>
+                <input class="c-field__input" type="text" id="company-name" name="companyName" autocomplete="organization" required />
+              </div>
+            </div>
+
+            <div class="c-form__row c-form__row--2col">
+              <div class="c-field">
+                <label class="c-field__label" for="email">Business email</label>
+                <input class="c-field__input" type="email" id="email" name="email" autocomplete="email" required />
+              </div>
+              <div class="c-field">
+                <label class="c-field__label" for="phone">Phone <span style="text-transform:none;">(optional)</span></label>
+                <input class="c-field__input" type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="c-form__row">
+              <div class="c-field">
+                <label class="c-field__label" for="inquiry-type">Inquiry type</label>
+                <select class="c-field__select" id="inquiry-type" name="inquiryType" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option value="consulting">Consulting Services</option>
+                  <option value="product">Product Partnership</option>
+                  <option value="channel">Channel Partner Inquiry</option>
+                  <option value="general">General</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="c-form__row">
+              <div class="c-field">
+                <label class="c-field__label" for="message">Message</label>
+                <textarea class="c-field__textarea" id="message" name="message" required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="c-button c-button--primary c-button--arrow">Send Your Message</button>
+            <p class="c-form__status" role="status" hidden></p>
+            <p class="c-form__note">We respond within one business day.</p>
+          </form>
+        </div>
+
+        <div>
+          <span class="u-eyebrow">Corporate Contact</span>
+
+          <div class="c-info-block u-mt-3">
+            <div class="c-info-block__label">Email</div>
+            <div class="c-info-block__value"><a href="mailto:contact@latticewire.com">contact@latticewire.com</a></div>
+          </div>
+          <div class="c-info-block">
+            <div class="c-info-block__label">Phone</div>
+            <div class="c-info-block__value"><a href="tel:+10000000000">[+1 (000) 000-0000]</a></div>
+          </div>
+          <div class="c-info-block">
+            <div class="c-info-block__label">Global HQ</div>
+            <div class="c-info-block__value">[City, Country]</div>
+          </div>
+          <div class="c-info-block">
+            <div class="c-info-block__label">Regional Offices</div>
+            <div class="c-info-block__value">[City, Country] &middot; [City, Country]</div>
+          </div>
+
+          <div class="c-partner-callout u-mt-5" id="partners">
+            <span class="u-eyebrow">Channel Partners</span>
+            <h2 class="u-h3 u-mt-2" style="font-size: 1.4rem;">Become a LatticeWire Channel Partner</h2>
+            <p class="u-mt-2" style="color: var(--color-graphite);">We work with resellers, MSPs, and technology integrators worldwide to bring vetted security solutions to more organizations. Let's explore a partnership built on shared trust and shared growth.</p>
+            <a href="mailto:partners@latticewire.com?subject=Channel%20Partner%20Inquiry" class="c-button c-button--primary c-button--arrow u-mt-2">Apply to Become a Partner</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="c-footer">
+    <div class="l-container">
+      <div class="c-footer__top">
+        <div>
+          <a href="index.html" class="c-logo" style="margin-bottom: 1rem;">
+            <svg class="c-logo__mark" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 6L10 2L18 6V14L10 18L2 14V6Z" stroke="#B8703F" stroke-width="1.2" />
+              <path d="M2 6L10 10L18 6M10 10V18M10 10L2 14M10 10L18 14" stroke="#B8703F" stroke-width="1" />
+            </svg>
+            LatticeWire
+          </a>
+          <p style="max-width: 32ch; color: #aab3c5; font-size: 0.9rem;">Independent cybersecurity consulting and vetted product partnerships, for organizations that can't afford to guess.</p>
+        </div>
+        <div>
+          <div class="c-footer__heading">Company</div>
+          <ul class="c-footer__list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="c-footer__heading">Connect</div>
+          <ul class="c-footer__list">
+            <li><a href="booking.html">Book a Call</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#partners">Become a Partner</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="c-footer__heading">Legal</div>
+          <ul class="c-footer__list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-footer__bottom">
+        <span>&copy; 2026 LatticeWire. All rights reserved.</span>
+        <span>Global HQ: [City, Country]</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
