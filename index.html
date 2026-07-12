@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LatticeWire | Coming Soon</title>
+  <meta name="description" content="LatticeWire — cybersecurity consulting and trusted technology partnerships. Launching soon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --color-ink: #0e1420;
+      --color-paper: #f7f7f5;
+      --color-steel: #8a94a6;
+      --color-steel-line: #2a3346;
+      --color-copper: #b8703f;
+      --color-copper-bright: #d2895a;
+
+      --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+      --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+      --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      position: relative;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      justify-items: center;
+      padding: 8vh 1.5rem 5vh;
+      background-color: var(--color-ink);
+      color: var(--color-paper);
+      font-family: var(--font-body);
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Signature lattice texture — faint, never competing with the text */
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    body::before {
+      background-image:
+        repeating-linear-gradient(45deg, rgba(184,112,63,0.10) 0, rgba(184,112,63,0.10) 1px, transparent 1px, transparent 48px),
+        repeating-linear-gradient(-45deg, rgba(184,112,63,0.05) 0, rgba(184,112,63,0.05) 1px, transparent 1px, transparent 48px);
+      mask-image: radial-gradient(circle at 50% 40%, black, transparent 70%);
+    }
+
+    body::after {
+      background-image: radial-gradient(circle, var(--color-copper) 1.4px, transparent 1.6px);
+      background-size: 48px 48px;
+      opacity: 0.15;
+      mask-image: radial-gradient(circle at 50% 40%, black, transparent 70%);
+    }
+
+    main {
+      align-self: center;
+      max-width: 34rem;
+      position: relative;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 3rem;
+    }
+
+    .logo svg { display: block; }
+
+    h1 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(2.25rem, 5.5vw, 3.5rem);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin: 0 0 1.25rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #aab3c5;
+      margin: 0;
+    }
+
+    footer {
+      align-self: end;
+      position: relative;
+      padding-top: 3rem;
+    }
+
+    .footer__label {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-steel);
+      margin-bottom: 0.6rem;
+    }
+
+    .footer__email {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: var(--color-paper);
+      text-decoration: none;
+      border-bottom: 1px solid var(--color-copper);
+      padding-bottom: 2px;
+      transition: color 150ms ease;
+    }
+
+    .footer__email:hover {
+      color: var(--color-copper-bright);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      main, footer {
+        animation: rise 700ms ease-out both;
+      }
+      footer { animation-delay: 150ms; }
+      @keyframes rise {
+        from { opacity: 0; transform: translateY(8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="logo">
+      <svg width="22" height="22" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 6L10 2L18 6V14L10 18L2 14V6Z" stroke="#B8703F" stroke-width="1.2" />
+        <path d="M2 6L10 10L18 6M10 10V18M10 10L2 14M10 10L18 14" stroke="#B8703F" stroke-width="1" />
+      </svg>
+      LatticeWire
+    </div>
+
+    <h1>Something secure is on its way.</h1>
+    <p>We're putting the finishing touches on LatticeWire — cybersecurity consulting and trusted technology partnerships for global teams.</p>
+  </main>
+
+  <footer>
+    <span class="footer__label">Questions in the meantime?</span>
+    <a class="footer__email" href="mailto:sajipa@latticewire.com">sajipa@latticewire.com</a>
+  </footer>
+
+</body>
+</html>
